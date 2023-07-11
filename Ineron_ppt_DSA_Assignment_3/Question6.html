@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findSingleNumber(nums) {
+  let result = 0;
+  for (let num of nums) {
+    result ^= num;
+  }
+  
+  return result;
+}
+const nums = [2, 2, 1];
+const singleNumber = findSingleNumber(nums);
+document.write("The asn. is a "+singleNumber);
+
+    </script>
+</body>
+</html>

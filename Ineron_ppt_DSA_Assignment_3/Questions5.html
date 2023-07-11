@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function incrementDigits(digits) {
+  const n = digits.length;
+  for (let i = n - 1; i >= 0; i--) {
+    digits[i]++;
+    if (digits[i] === 10) {
+      digits[i] = 0;
+    } else {
+      break;
+    }
+  }
+  if (digits[0] === 0) {
+    digits.unshift(1);
+  }
+
+  return digits;
+}
+const digits = [1, 2, 3];
+const result = incrementDigits(digits);
+document.write("The ans. is a "+result);
+  
+    </script>
+</body>
+</html>
